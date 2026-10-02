@@ -8,9 +8,11 @@ The personal brand OS for Twitter/X and LinkedIn: score, improve, schedule and
 publish posts, from Claude, ChatGPT, Grok, Claude Code or any assistant that
 supports remote MCP servers with OAuth.
 
-**This repository holds documentation only.** The server is a hosted service
-run by VoiceMoat at the address below. Its source code is not public, and there
-is nothing here to install or run.
+**This repository holds documentation and connection settings only.** The
+server is a hosted service run by VoiceMoat at the address below. Its source
+code is not public, and there is nothing here to run. `plugin.json` and
+`mcp.json` follow the [Agent Plugins](https://open-plugins.com) standard and
+only point a client at that address.
 
 ```
 https://app.voicemoat.com/api/mcp

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "voicemoat",
+  "version": "1.0.0",
+  "description": "The personal brand OS for Twitter/X and LinkedIn: score, improve, schedule and publish posts. Connects to VoiceMoat's hosted MCP server; requires a VoiceMoat account on the Pro or Enterprise plan.",
+  "author": {
+    "name": "VoiceMoat",
+    "email": "founder@voicemoat.com",
+    "url": "https://voicemoat.com"
+  },
+  "homepage": "https://voicemoat.com/mcp",
+  "repository": "https://github.com/prateeks367/voicemoat-mcp",
+  "keywords": ["mcp", "linkedin", "twitter", "x", "personal-branding", "social-media", "scheduling", "analytics"]
+}
