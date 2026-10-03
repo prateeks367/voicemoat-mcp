@@ -79,6 +79,13 @@ claude mcp add -t http voicemoat https://app.voicemoat.com/api/mcp
 
 Then type `/mcp` to sign in.
 
+**Cline**
+
+1. In the Cline panel, select the wrench icon, then the **MCP** tab.
+2. Choose **Add Remote Server**, name it VoiceMoat and paste the address above.
+3. Sign in to VoiceMoat in the browser window Cline opens. Once connected,
+   VoiceMoat shows a green dot and its 15 tools.
+
 **Other clients**
 
 Any client that supports remote MCP servers over Streamable HTTP with OAuth can
