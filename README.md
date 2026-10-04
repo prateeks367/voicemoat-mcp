@@ -11,8 +11,9 @@ supports remote MCP servers with OAuth.
 **This repository holds documentation and connection settings only.** The
 server is a hosted service run by VoiceMoat at the address below. Its source
 code is not public, and there is nothing here to run. `plugin.json` and
-`mcp.json` follow the [Agent Plugins](https://open-plugins.com) standard and
-only point a client at that address.
+`mcp.json` follow the [Agent Plugins](https://open-plugins.com) standard, and
+`.claude-plugin/` with `.mcp.json` make the same settings a Claude Code plugin.
+All of them only point a client at that address.
 
 ```
 https://app.voicemoat.com/api/mcp
@@ -73,11 +74,36 @@ workspace.
 
 **Claude Code**
 
+As a plugin:
+
+```
+/plugin marketplace add prateeks367/voicemoat-mcp
+/plugin install voicemoat@voicemoat-mcp
+```
+
+Or add the server on its own:
+
 ```
 claude mcp add -t http voicemoat https://app.voicemoat.com/api/mcp
 ```
 
-Then type `/mcp` to sign in.
+Either way, type `/mcp` to sign in.
+
+**Cursor**
+
+Add the server to `~/.cursor/mcp.json`, or to `.cursor/mcp.json` in a project:
+
+```json
+{
+  "mcpServers": {
+    "voicemoat": {
+      "url": "https://app.voicemoat.com/api/mcp"
+    }
+  }
+}
+```
+
+Then sign in to VoiceMoat when Cursor asks.
 
 **Cline**
 
@@ -147,6 +173,7 @@ https://github.com/prateeks367/voicemoat-skills
 
 - [Smithery](https://smithery.ai/servers/prateeks367/voicemoat)
 - [Glama](https://glama.ai/mcp/connectors/com.voicemoat/voicemoat)
+- [Claude Market](https://claudemarket.ai)
 
 ## Links
 
@@ -156,3 +183,9 @@ https://github.com/prateeks367/voicemoat-skills
 
 `server.json` in this repository is the entry published to the Official MCP
 Registry.
+
+## License
+
+The documentation and connection settings in this repository are under the
+MIT license; see [LICENSE](LICENSE). The license does not cover the VoiceMoat
+service or its server code, which are not public.

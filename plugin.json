@@ -10,5 +10,6 @@
   },
   "homepage": "https://voicemoat.com/mcp",
   "repository": "https://github.com/prateeks367/voicemoat-mcp",
+  "license": "MIT",
   "keywords": ["mcp", "linkedin", "twitter", "x", "personal-branding", "social-media", "scheduling", "analytics"]
 }

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "voicemoat": {
+      "type": "http",
+      "url": "https://app.voicemoat.com/api/mcp"
+    }
+  }
+}
